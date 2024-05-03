@@ -30,7 +30,7 @@ function App() {
   return (
     <Stack gap={3} className="p-4">
       <Dropdown>
-        <Dropdown.Toggle variant="secondary" disabled={countries.length === 0}>
+        <Dropdown.Toggle data-testid="toggle-countries" variant="secondary" disabled={countries.length === 0}>
           {selectedCountry.id ? selectedCountry.value : 'Select a country'}
         </Dropdown.Toggle>
 
@@ -42,7 +42,7 @@ function App() {
       </Dropdown>
 
       <Dropdown>
-        <Dropdown.Toggle variant="secondary" disabled={states.length === 0}>
+        <Dropdown.Toggle data-testid="toggle-states" variant="secondary" disabled={states.length === 0}>
           {selectedState.id ? selectedState.value : 'Select a state'}
         </Dropdown.Toggle>
 
