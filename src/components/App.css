@@ -1,0 +1,20 @@
+.dropdown-toggle {
+  width: 300px;
+  text-align: left;
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  margin-left: initial;
+  vertical-align: initial;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.dropdown-menu {
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+}
